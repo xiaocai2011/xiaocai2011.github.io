@@ -1,6 +1,11 @@
+@font-face {
+    font-family: "PingFang";
+    src: url("./assets/ttf/pingfang.ttf");
+}
+
 body {
 	margin: 0;
-	font-family: Arial, sans-serif;
+    font-family: "PingFang";
 }
 
 .body {
@@ -62,7 +67,7 @@ body {
     height: 500px;
     width: 80%;
     padding: 20px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(16px);
     border-radius: 24px;
     background-color: transparent;
     margin-top: 100px;
@@ -81,7 +86,7 @@ body {
 	width: 80%;
 	border-radius: 24px;
 	background-color: transparent;
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(16px);
     padding: 20px;
     text-align: center;
     margin-top: 60px; /* 留出空间以避免与导航栏重叠 */
@@ -95,11 +100,23 @@ body {
 	color: white;
 }
 
-.Open {
-    margin: auto;
-    left: 10%;
+.Open, .untitled-0, .untitled-1 {
+    background-color: transparent;
+    border-radius: 24px;
+    backdrop-filter: blur(16px);
+    margin: 5% 9%;
 }
 
-.Open p {
+.Open, .untitled-0, .untitled-1 p {
     color: white;
+    text-align: center;
+}
+
+.advantage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Open, .untitled-0, .untitled-1 {
+    flex: 1;
 }
